@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+</head>
+<body>
+			<div>
+			
+			<h1 align= "center">Application Form</h1>
+			<hr>
+			<p>Fill up the form properly. Incomplete forms will be discarded</p>
+			<form action = "page-handler.php" method = "POST">
+				<h2>Personal Information</h2>
+				<hr>
+				<p>We need your personal information to complete the process. Please fill up the fields below with correct information.</p>
+				<p>Username : <input type = "text" name = "username"></p>
+				<p>Email : <input type = "email" name = "email"></p>
+				<p>Address: <input type="text" name="Address">
+					<select name="city">
+						<option disabled selected>Select City</option>
+						<option>Dhaka</option>
+			 		    <option>Sylhet</option>
+			 		    <option>Rajshahi</option>
+			 		    <option>Khulna</option>
+			 		     <option>Barishal</option>
+			 		      <option>Chittagong</option>
+			 		</select>
+				</p>
+				<h2>Your Working Field</h2><hr>
+				<p>Select from the list below (You can chosse one field only):</p>
+				<p>Fornt-End Developer : <input type = "radio" name = "selection" value = "FD" ><br>
+				   Back-End Developer : <input type = "radio" name = "selection" value = "BD"><br>
+				   Full Stak Developer : <input type = "radio" name = "selection" value = "FSD">
+				</p>
+				<h2>Expert In</h2>
+				<hr>
+				<p>Select the fields you are expert in. You can select more than one fields at a time.</p>
+				<p>
+					HTML: <input type = "Checkbox" name = "html" value = "html"> <br>
+					CSS: <input type = "Checkbox" name = "css" value = "css"> <br>
+					JavaScript: <input type = "Checkbox" name = "javascript" value = "javascript"> <br>
+					PHP: <input type = "Checkbox" name = "php" value = "php"> <br>
+					Python: <input type = "Checkbox" name = "python" value = "python"> <br>
+					MySQL: <input type = "Checkbox" name = "mysql" value = "mysql"> <br>
+				</p>
+				<h2>Upload your Photo & CV</h2>
+				<hr>
+				<p>Upload your photo and CV here. Use PNG format for the image.</p>
+
+					Upload Image: <input type = "file" accept="image/png"><br><br>
+					Upload CV: <input type = "file" accept="application/pdf"> 
+				</p>
+				<hr>
+				<p>
+					Submit: <input type = "submit" >
+					Reset: <input type = "reset" >
+				</p>
+			</form>
+			</div>
+
+
+
+
+</body>
+</html>
